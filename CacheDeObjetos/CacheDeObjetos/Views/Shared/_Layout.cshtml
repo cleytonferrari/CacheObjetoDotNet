@@ -8,6 +8,15 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <h1>Cache de Objetos</h1>
+
+    <ul>
+        <li>@Html.ActionLink("Adiciona Objeto", "AdicionarObjeto", "Home") </li>
+        <li>@Html.ActionLink("Adiciona Objeto com dependencia", "AdicionarObjetoComDependencia", "Home")</li>
+        <li>@Html.ActionLink("Adiciona Objeto com tempo determinado", "AdicionarObjetoComTempo", "Home")</li>
+        <li>@Html.ActionLink("Adiciona Objeto com tempo determinado, baseado no ultimo acesso", "AdicionarObjetoComTempoBasedoNoUltimoAcesso", "Home")</li>
+    </ul>
+    <hr />
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
