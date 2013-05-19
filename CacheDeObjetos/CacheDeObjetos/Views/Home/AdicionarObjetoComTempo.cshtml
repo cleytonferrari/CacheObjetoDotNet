@@ -1,0 +1,13 @@
+﻿@model CacheDeObjetos.Models.Cotacao
+@{
+    ViewBag.Title = "";
+}
+
+<h2>Objeto em Cache com tempo determindado</h2>
+<em>O objeto em Cache irá expirar em uma determinada data, a partir do momento de inserção do objeto no Cache, independente do seu uso ou não.</em>
+
+<p>Descrição: @Model.Descricao</p>
+<p>Valor: @Model.Valor.ToString("0.##")</p>
+<p>Ultima Atualização: @Model.UltimaAtualizacao.ToString("dd/MM/yyyy HH:mm:ss")</p>
+
+<p>O cache atualiza em cada 5 segundos</p>
